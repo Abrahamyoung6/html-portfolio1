@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0); 
+            color: white; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(to right, red, yellow, green, blue, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            background: linear-gradient(to right, orange, yellow);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, white, #0000ff, #ff0000, rgb(93, 252, 1));
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #00f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Toggle Switch Styles */
+        .switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .switch label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            width: 30px; 
+            height: 16px; 
+            background-color: #ccc;
+            border-radius: 16px;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 12px; 
+            border-radius: 50%;
+            background-color: white;
+            transition: transform 0.3s;
+            transform: translateX(2px); 
+            top: 2px;
+            left: 2px;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider::before {
+            transform: translateX(14px); 
+        }
+
+        
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Toggle Switch -->
+    <div class="switch">
+        <label>
+            Dark Mode
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <h1>OGO ABRAHAM</h1>
+
+    <img src="./IMG-20240401-WA0065.jpg" height="200" alt="Ogo Abraham">
+
+    <h2>Summary</h2>
+    <p>I am a hardworking and dedicated individual with experience in customer service and administration and a vast knowledge in IT.</p>
+    
+    <hr />
+
+    <h2>Education</h2>
+    <ul>
+        <li>Bachelor of Arts in Philosophy (BA in Philosophy)</li>
+    </ul>
+
+    <hr />
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Customer Service:&#x2B50;&#x2B50;&#x2B50;&#x2B50;</li>
+        <li>Web Development:&#x2B50;&#x2B50;&#x2B50;&#x2B50;</li>
+        <li>Cybersecurity Skills:&#x2B50;&#x2B50;&#x2B50;&#x2B50;</li>
+        <li>Programming Skills:&#x2B50;&#x2B50;</li>
+    </ul>
+
+    <hr />
+
+    <h2>Certifications</h2>
+    <ul>
+        <li>Comptia A+</li>
+        <li>Comptia Network+</li>
+        <li>Comptia Security+</li>
+        <li>Web Development Bootcamp</li>
+        <li>Python for beginners</li>
+    </ul>
+
+    <hr />
+
+    <h2>Other</h2>
+    <ul>
+        <li><a href="./my hobbies.html">My Hobbies</a></li>
+        <li><a href="./contact.html">My Contact</a></li>
+    </ul>
+
+    <footer>© Ogo Abraham. All rights reserved.</footer>
+
+    <script>
+        // JavaScript for toggle switch
+        document.getElementById('theme-toggle').addEventListener('change', function() {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>
